@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button>Click me</button>
+    <div class="popup-wrapper abc">
+        <div class="popup">
+            <div class="popup-close">×</div>
+            <div class="popup-content">
+                <div class="head">
+                    Please Login To Continue
+                </div>
+                <div class="content-back">
+                    <div class="login-register-div">
+                        <div class="select-radio">
+                            <div class="sign-in tabActive">
+                                Sign in
+                            </div>
+                            <div class="sign-up">
+                                Sign up
+                            </div>
+                        </div>
+                        <section class="body-section" id="content1">
+                            <form class="login-form" id="Login">
+                                <div class="modal-form-group">
+                                    <input name="email" id="uname" required="required" type="text"
+                                        class="modal-form-input" placeholder="Username or email">
+                                </div>
+                                <div class="modal-form-group">
+                                    <input name="pass" id="password" type="password" required="required"
+                                        class="modal-form-input" placeholder="Password">
+                                </div>
+                                <div class="modal-forgot">
+                                    <a href="#">Forgot Password</a>
+                                </div>
+                                <div class="modal-form-group">
+                                    <button class="btn-blu signin-button" type="submit">Sign In</button>
+                                </div>
+                            </form>
+                        </section>
+                        <section class="body-section" id="content2">
+                            <form class="login-form" id="Register">
+                                <input type="hidden" name="reqType" value="Register">
+                                <div class="modal-form-group">
+                                    <div class="extra"></div>
+                                </div>
+                                <div class="modal-form-group">
+                                    <input name="email" id="email" type="email" required="required"
+                                        class="modal-form-input" placeholder="E-mail">
+                                </div>
+                                <div class="modal-form-group">
+                                    <input name="pass" id="reg-password" type="password" required="required"
+                                        class="modal-form-input" placeholder="Password">
+                                </div>
+                                <div class="modal-form-group">
+                                    <button class="btn-blu signup-button" type="submit">Sign Up</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
